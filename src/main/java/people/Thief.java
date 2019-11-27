@@ -47,14 +47,16 @@ public class Thief extends Person {
     }
 
     public void sellVehicle(MiddleMan middleMan, Vehicle vehicle){
-        middleMan.addVehicle(vehicle);
-        this.addToWallet(vehicle.getValue());
-        middleMan.removeFromWallet(vehicle.getValue());
-        removeVehicle(vehicle);
+        if (middleMan.hasEnoughMoney(vehicle)) {
+            middleMan.addVehicle(vehicle);
+            this.addToWallet(vehicle.getValue());
+            middleMan.removeFromWallet(vehicle.getValue());
+            removeVehicle(vehicle);
+        }
     }
 
     public void sellVehicle(Customer customer, Vehicle vehicle){
-        if (customer.getVehicleWanted() == vehicle) {
+        if (customer.getVehicleWanted() == vehicle && customer.hasEnoughForThief(vehicle)) {
             removeVehicle(vehicle);
             customer.removeFromWallet(vehicle.getValue());
             addToWallet(vehicle.getValue());

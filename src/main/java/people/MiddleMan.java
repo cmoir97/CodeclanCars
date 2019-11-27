@@ -26,11 +26,15 @@ public class MiddleMan extends Person {
     }
 
     public void sellVehicleToCustomer(Vehicle vehicle, Customer customer){
-        if (customer.getVehicleWanted() == vehicle) {
+        if (customer.getVehicleWanted() == vehicle && customer.hasEnoughForMiddleman(vehicle)) {
             removeVehicle(vehicle);
             customer.removeFromWallet(((int)(vehicle.getValue() * 1.1)));
             addToWallet(((int)(vehicle.getValue() * 1.1)));
         }
+    }
+
+    public boolean hasEnoughMoney(Vehicle vehicle){
+        return getWallet() >= vehicle.getValue();
     }
 
 }

@@ -16,4 +16,12 @@ public class Customer extends Person {
     public Vehicle getVehicleWanted() {
         return this.vehicleWanted;
     }
+
+    public boolean hasEnoughForMiddleman(Vehicle vehicle){
+        return this.getWallet() >= (vehicle.getValue() * 1.1);
+    }
+
+    public boolean hasEnoughForThief(Vehicle vehicle){
+        return this.getWallet() >= (vehicle.getValue());
+    }
 }

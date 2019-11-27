@@ -5,7 +5,7 @@ import people.Customer;
 import vehicle.Car;
 import vehicle.Vehicle;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 public class CustomerTest {
 
@@ -26,5 +26,27 @@ public class CustomerTest {
     @Test
     public void canGetVehicleWanted(){
         assertEquals(car, customer.getVehicleWanted());
+    }
+
+    @Test
+    public void hasEnoughForMiddleman(){
+        assertTrue(customer.hasEnoughForMiddleman(car));
+    }
+
+    @Test
+    public void hasEnoughForThief(){
+        assertTrue(customer.hasEnoughForThief(car));
+    }
+
+    @Test
+    public void doesNotHaveEnoughForMiddleman(){
+        customer.removeFromWallet(150);
+        assertFalse(customer.hasEnoughForMiddleman(car));
+    }
+
+    @Test
+    public void doesNotHaveEnoughForThief(){
+        customer.removeFromWallet(150);
+        assertFalse(customer.hasEnoughForThief(car));
     }
 }

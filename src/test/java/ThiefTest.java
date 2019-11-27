@@ -12,11 +12,13 @@ public class ThiefTest {
 
     Thief thief;
     Car car;
+    Customer customer;
 
     @Before
     public void before(){
         car = new Car("Herbie", "Beetle", Make.VW, 100);
         thief = new Thief("Freezer", 5, 100);
+        customer = new Customer("Irati", car, 200);
     }
 
     @Test
@@ -87,7 +89,6 @@ public class ThiefTest {
 
     @Test
     public void canSellVehicleToCustomer() {
-        Customer customer = new Customer("Irati", car, 200);
         thief.stealVehicle(car);
         thief.sellVehicle(customer, car);
         assertEquals(0, thief.numberOfStolenVehicles());
@@ -108,4 +109,27 @@ public class ThiefTest {
         thief.emptyVehicleList();
         assertEquals(0, thief.numberOfStolenVehicles());
     }
+
+    @Test
+    public void CustomerHasNotEnoughMoney(){
+        customer.removeFromWallet(150);
+        thief.stealVehicle(car);
+        thief.sellVehicle(customer, car);
+        assertEquals(1, thief.numberOfStolenVehicles());
+        assertEquals(100, thief.getWallet());
+        assertEquals(50, customer.getWallet());
+    }
+
+    @Test
+    public void cannotSellToMiddleman() {
+        MiddleMan middleman = new MiddleMan("Zsolt", 200);
+        middleman.removeFromWallet(150);
+        thief.stealVehicle(car);
+        thief.sellVehicle(middleman, car);
+        assertEquals(0, middleman.getNumberOfVehicles());
+        assertEquals(1, thief.numberOfStolenVehicles());
+        assertEquals(100, thief.getWallet());
+        assertEquals(50, middleman.getWallet());
+    }
+
 }

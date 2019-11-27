@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a8fbcf79-1920-4ae7-a2e6-57667d42d329" name="Default Changelist" comment="" />
+    <list default="true" id="a8fbcf79-1920-4ae7-a2e6-57667d42d329" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/people/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/people/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/people/MiddleMan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/people/MiddleMan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/people/Thief.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/people/Thief.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CustomerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CustomerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MiddleManTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MiddleManTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ThiefTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ThiefTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/people/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/people/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/people/MiddleMan.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/people/MiddleMan.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/people/Thief.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/people/Thief.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/CustomerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/CustomerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/MiddleManTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/MiddleManTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ThiefTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ThiefTest.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +32,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -25,6 +43,10 @@
     </option>
   </component>
   <component name="ProjectId" id="1UCKzRH8o6da8UPvEBwGOUyoGeH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -37,52 +59,52 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BountyHunterTest.canCatchCriminal">
-    <configuration name="BountyHunterTest.canCatchCriminal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CodeclanCars" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BountyHunterTest" />
-      <option name="METHOD_NAME" value="canCatchCriminal" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BountyHunterTest.canGetThiefHunted" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CodeclanCars" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BountyHunterTest" />
-      <option name="METHOD_NAME" value="canGetThiefHunted" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MiddleManTest.canSellVehicleToCustomer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ThiefTest.cannotSellToMiddleman">
+    <configuration name="MiddleManTest.customerHasNotEnoughMoney" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CodeclanCars" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MiddleManTest" />
-      <option name="METHOD_NAME" value="canSellVehicleToCustomer" />
+      <option name="METHOD_NAME" value="customerHasNotEnoughMoney" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThiefTest.canEmptyVehicleList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MiddleManTest.hasEnoughMoney" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CodeclanCars" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ThiefTest" />
-      <option name="METHOD_NAME" value="canEmptyVehicleList" />
+      <option name="MAIN_CLASS_NAME" value="MiddleManTest" />
+      <option name="METHOD_NAME" value="hasEnoughMoney" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThiefTest.canEmptyWallet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MiddleManTest.hasNotEnough" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CodeclanCars" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MiddleManTest" />
+      <option name="METHOD_NAME" value="hasNotEnough" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThiefTest.CustomerHasNotEnoughMoney" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CodeclanCars" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ThiefTest" />
-      <option name="METHOD_NAME" value="canEmptyWallet" />
+      <option name="METHOD_NAME" value="CustomerHasNotEnoughMoney" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThiefTest.cannotSellToMiddleman" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CodeclanCars" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ThiefTest" />
+      <option name="METHOD_NAME" value="cannotSellToMiddleman" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -90,11 +112,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BountyHunterTest.canCatchCriminal" />
-        <item itemvalue="JUnit.ThiefTest.canEmptyVehicleList" />
-        <item itemvalue="JUnit.ThiefTest.canEmptyWallet" />
-        <item itemvalue="JUnit.BountyHunterTest.canGetThiefHunted" />
-        <item itemvalue="JUnit.MiddleManTest.canSellVehicleToCustomer" />
+        <item itemvalue="JUnit.ThiefTest.cannotSellToMiddleman" />
+        <item itemvalue="JUnit.MiddleManTest.hasNotEnough" />
+        <item itemvalue="JUnit.MiddleManTest.hasEnoughMoney" />
+        <item itemvalue="JUnit.MiddleManTest.customerHasNotEnoughMoney" />
+        <item itemvalue="JUnit.ThiefTest.CustomerHasNotEnoughMoney" />
       </list>
     </recent_temporary>
   </component>
@@ -110,5 +132,16 @@
       <updated>1574855398876</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
